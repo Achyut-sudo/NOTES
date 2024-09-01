@@ -1,0 +1,377 @@
+MOD 2
+
+Basics of software testing: - 
+	It mainly aims at measuring the specification, functionality, and performance of a software program or application. 
+	also finds the measure to improve the S/W in terms of accuracy. efficiency, usability.
+
+	reasons for S/T
+		1 Saves Money : early error dtection costs much less,
+		2 Security : free from vulnerability 
+		3 Quality of product :  S/W in accordance with needs pf the product, 		ensureffective for customer exp, compatibilty with diff os ans devices 
+		4 Satisfaction of the customer
+		5 Enhancing the devlopment process: the chjances of errors can be reduced , tester shoild work with dev team
+		6. Easy while adding new feats : tests helps to ensure that addition of new feats does not break older or impoortant functioning part ogf the software
+		7. determining the performance of the S/W
+
+
+
+
+
+
+	can be divided into two steps :
+		1> verification :set of tasks to ensure software correctly implementsaa a specific function	
+			"are we building product right?"
+		2> validation : set of taks to ensure that the s/w is traceabkle to cuctomer needs
+			"are we building right product?"
+	
+	two types of software testing :
+		1 > Manual Testing: tester takes role of end user
+			stages :
+				unit testing
+				integration testing
+				system testing
+				acceptance testing
+			usess test plans, test  cases, or test scenarios,
+			also includes exploratory testing.
+		2 > Automation Testing: tester writes scripts or uses other s/w to test product s/w
+			focuses on load,performance,stress point ,accuracy
+			more cheap and less time consuming than manual tersting
+
+	on
+	different types of s/w testing TECHNIQUES :
+		Black Box
+		White Box
+		Gray Box
+	different levels of s/w testing :
+		unit -> Integration -> System ->  Acceptance
+	seven princ of s/w testing:
+		1. Testing Shows defects : s/w testing can guarantee presence of defects but not ensure ths s/w is defect free.
+		2. Exhaustive testing is nto Possible : (exhaustive testing : all possible pre conds and all possible inputs), s/w can never be exhausistively tested as it eill be expensive and sloww
+		3. Early testing : Early detection od defect will be cheap, testing will start at rewuirement ananlysis phase.
+		4. Defect Cluster : most defect from small no. of modules (pareto principle : 205 modules contains 80% defects)
+		5. Pesticide Paradox : testing on same inputs will not find any new defect, updation and addition of new test cases is req.
+		6. testing is context dependent: different testing approach for different types of software testing 
+		7. Absence of errors fallacy : being bug free is not the motto ,but along with it it should fulfill customer reqs.
+
+Total Quality Management :
+	structured management to overall Organizational improvment 
+	aims to improve organizatios's output
+	continual process of :
+		detecting and reducing/ eliminating manuhfactur8ing
+		streamlining supply chain
+		improving cutomer exp.
+		ensuring employees are upto speed to training
+	aims to hold all parties accountable for aorganizationp's output
+	ingredients :
+		Ethics
+		Integrity
+		Trust
+		Training
+		Teamwork
+		Leadership
+		Recognition
+		Communication
+	Philososphy of QUALITY MANAGEMENT : (worker is responsible and supply reltn: short and costly)
+		productivity and Quality are conflicting roles.
+		Quality : comformance to requirments and specifications
+		quality is measured ny dgree of non conformance 
+		quality can be obtained through intense prdct inspection
+		some nugs can be allowed inorder to meet the customer quality needs
+	Philososphy of TQM : (management responsibhle for poor quality and supply reltn : long and cheap)
+		productivity and Quality are non conflicting
+		Quality is measured bu user satisfaction 
+		Quality can be achieved by effective 0product dfesign and process control
+		defects are prevented through process control
+
+TQM  Testing : s/w testing done using concepts of TQM
+
+Big bang Testing :
+	type of integration testing
+	all units are linkedat once resulting in a system and this system is tested
+	difficult of isolate defects ,becuase attenyion is not paid to verifying interfaces between units. 
+	Defects :
+		defetcts at the interfaces are found late
+		difficult to isloate de4fects
+		high probab of missing critical defects
+		difficult to cover all test cases
+	ADVANTAGES :
+		TESTER DOES NOT NEED TO KNOW THE WHOLE SYSTEM
+		EFFICIENT OF IMPLEMENTING IN LARGER SYSTEM
+		tests are executed from client os user23:34 25-09-2022s point of vierw
+		
+black box/BEHJJAVIOURAL testing:
+	s/w is tested without any knowlegdge of the internal workings
+	it focuses on outputs of varoious inoputs entirely based on customer specs and needs
+	types :
+		Functional : determines the systems req
+		T=Regression : not updates hampers the requiremnt cpmpatiblity
+		Non Funcctional : performance, usability, scalibilty
+	advantages :
+		tester need no in depth knowledge
+		eficient toi implement in Large system
+		test are in user's pov
+		test case are easliy reproducible
+		finds anbiguity and contradictions in func specs
+	disadvantages :
+		possiblity or repeating tests
+		withour clear func specs test are hard to implement
+		difficult to execute test cases
+		reason of failure can not be tracex
+		applications are not tested
+		does nto revea; errors in control structure
+		large inputs are exhaustive
+
+white box testing / glass box/ clear bos. sttructural testing :
+	analyze the internal structures the use ds internal design , code structure and the workings of the s/w
+	advantages :
+		very thorough
+		results in code optimization and refactoring
+		doesn;t req interface like black box
+		can be started early
+		easy to automate
+	disadvantages :
+		expensive
+		redisgn of code and rewritting needs trest cases to be pdated 
+		tester need in depth knowledge of the units
+		can not detect missing functionalities
+		very complex and time consuming
+Gray Testing :
+	combination of black and white box testing
+	internal structure is partially known
+	focusses on contest specific errors
+	it is based on requirement test case generation as rqs are presented before testing
+	objectives :
+		combines bbt and wbt
+		combines inputs of testers and deveoopers
+		imporve prd quality
+		reduce overhead of func and non func testing
+		to free time to fix defects
+		to test from user's and deveolpoers pov
+	techniques :
+		Matrix :
+			technical nad buisness risks are examined
+		pattern :
+			previous defects are analyuzed
+			determines the cause of the failure from code
+			test cases are find to find defect before hitting production
+		Orthogonal Array :
+			mainly bbt 
+			test data different opermutations and combinations are used
+			used when max coverage is required and few test cases and test data is large
+			for testing complex application		
+		Regression testing :
+			updates and defect fixes does nto hamper other functionalities
+	advantages :
+		clear goal for all
+		mostly use perspective
+		not in depth knowledge is req by the testers
+		noon intrusive
+		more time for defect fixing
+		ubaised , avoids conflict b/w testers and developers
+		nore efficient in intgration
+	disadvantages :
+		defct detection is hard for distributed system
+		liapth traversal
+		comp. wbt is not possible
+		not suitable for algorithm testing
+		test cases are difficult to design 
+
+
+test policy -> organizational level
+test startegy -> program level
+test Plan -> project level
+
+
+Test policy :
+	gives the organizational insight for test activities
+	determined by the senior management, and it is at top of test  documentation 
+	defines test principles
+	describes :
+		test objectives
+		what does the test mean for the organization
+		defintio0n of testing process
+		how effectiveness and efficieny will be measured
+		how to improve test process
+
+Test strategy :
+	general test startegy
+	management principles
+	priocess and approaches
+	written by test manager or project manager
+	describes :
+		objective / scpoe of testing
+		in scope/out of scope of testing
+		test levels
+		test types
+		Entry/start/resumption critereia of the testing
+		test env, case design, methadology, control tools
+		defect mangementy
+		defect classification
+
+Test Plan :
+	written by test manager ans test leader
+	defines the work products to be tested
+	defines how they will be tested(test cases)
+	test type distribution
+	persons ans their responsibilities ,test levels , test schedules
+	principles of management and report of bugs. errors
+	describes :
+		all test strategies 
+		test estimation and test schedule
+		test organisation 
+		test reporting principles
+
+software configurations : 
+	the elements that comprisse all information regrading the software state  produced duringg changes to the sotware  fpr efficient update 
+
+Software Configuration Management :
+	system to process to systematically manage organize  and control the changes in the documents codes ans other entitites during SDLC
+	main goal is to incrase productivity eith minimal mistakes
+	identifies changes
+	moniter and control change 
+	ensure the proper inplementaiton of change made to tje the item
+	auditing and reporting on the change 
+
+Work Product :  means every invention, discovery, work of authorship, trade secret or other tangible or intangible item and all intellectual property rights therein that Contractor is required to deliver to Agency pursuant to the Work.
+SDLC stages :
+	req analysis
+	planning
+	software design 
+	development
+	testing
+	deployment
+	extra : maintainance
+	Models :
+		waterfall : one phase after another
+		agile : succesion opof releases, defect are fixed in the new release
+		iterative model : create a simple version very quicckly test and improvement through rapid versions
+		V-shaped : smae line waterfall, but test at each stage
+		Big Bang : throws all resources on development
+		spiral : same like iterative , but goes through plannign design , build and test 
+
+	
+product risk : is the potential for losses related to the marketing of product or service .
+product risk mangement 
+	process of identifying treatinf controlling and monitering risk asa part of product  development or product management
+	DEmand Risk : failed to create demand
+	operational risk:  delayed product launc
+	Price risk : price war woith competitior
+	Customer issues : cust exp issuses 
+	quality  risk : poro quality
+	brand risk:
+	inventory riak :
+	reputaion
+	compliance anad regulation
+	product liablity : Failures that causes damages
+
+risk management process :
+	1. identify risk 
+	2. analyze risk 
+	3. evaluate the riak opr risk assesment
+	4. treat the risk
+	5. Moniter and review the risk
+
+risk control 
+	methods by which evaluate potential risk factors tha may causes losses and take action to reduce or eliminate such threats
+
+risk control mechanism 
+	avoidance : avoid factors of risk
+	loss prevention : accepts a risk but attempts to minimize the loss ex : insurae
+	loss reduction : accepts a risk but minimizes loss ehen a threat occurs
+	separation :  dispersing key assets
+	duplication : create a backup plan
+	diversification : create multiple line of business
+
+software verification and validation during SDLC
+	Tracebility analysis : 
+		tracing every software req back to its original system req
+		every software corrrectly stisfiees the system req
+		derived reqs are consistent with original objectives , physical laws, and technlogies described system doc
+	Interface Analysis :
+		analysis of interface reqs in SDLC
+		identifies interface b/w applicatiosns ,so that each module is communicating properly with other modules
+		interface between software hardware and user
+	critical Analysis :
+		criticality is for each and every req 
+		combined critiality of req and thier corresponding functions is the aggregate function.
+	Hazard and risk analysis :
+		done during definition activity
+		
+V test Model :
+	also known as test and veififcation model/verification and validation model
+	extnsion of waterfall but testing for each developmental stage
+	the corresponding t3esting phase is planned in parallel.
+	verification process obn one side and validation on anotherr
+	coding phase joins the two
+	req analysis
+		sys des. 
+				arch. Des.
+						mod Des  unti test  
+								coding
+	verifications process :	
+		Buisness Req Analysis 
+		system design	
+		Arch des 
+		Mod Des
+	validation process :
+		unti testing 
+		integration testing
+		System testing
+		Accceptance gtesting
+	applications :
+		medical evelopment field
+	advantages :
+		highly disciplined and seq
+		works well for short projexts
+		simple and easy
+		easy to amange
+	diasadvantages :
+		High riak and uncertainitty 
+		Not a good model foer complex projects
+
+
+defect management :
+	defect discovery , removal and process imporvement,
+	Defect prevention : 
+	deliverable Baseline : pre defined mile stone 
+	Defect discoveery :
+	defect resolution : 
+	process improvement :
+		
+STLC: 
+	req analysis
+	test planning 
+	test case development 
+	test environment ssetup
+	test execution
+	test closure'
+
+acceptnace testing :
+	types: 
+		USER AT
+		BUISNESS AT
+		Contract Acceptance Testing
+		regulations AT
+		Operability AT
+	
+
+Quality Assurance is the set of activities that defines the procedures and standards to develop the product.
+
+Quality Assurance is a systematic way of creating an environment to ensure that the software product being developed meets the quality requirements. 
+
+
+The main aim of Quality control is to check whether the products meet the specifications and requirements of the customer
+
+Quality control is to examine the product or service and check for the result. Quality Assurance in Software Engineering is to examine the processes and make changes to the processes which led to the end-product.
+	
+	
+
+		
+		
+			
+			
+	
+
+	
+
+	

@@ -1,0 +1,289 @@
+Mod2 :
+
+	priblem solving agent 
+		problem solving agents are goal based agents
+		decides whatr to do by finding Sequnces of actions that lead to desirable states
+
+Goals help organize behavior by limiting the objectives that the agent is trying to achieve
+
+Goal formulation, based on the current situation and the agent's performance measure, is the first step in problem solving
+
+problem formulation is the process of deciding what actions and states to consideer m given a goal
+
+
+Search : the process of examing and selcting sequences of immediate unkown values that lead up to a state of known value 
+
+design of a problem solving agent : formulate, seach execute 
+
+assumptions of aproblem solving agent :
+
+	1. environment is static
+	2. initla state is known 
+	3. environment is discrete 
+	4. environment is determinstic
+
+problem :
+	components of a problem : *these components define a problem and also helps to gather the problem into a data structure so that it can passed to problem solving algorithm)
+
+		1. initial state
+
+		2. state space : (initial state + successor function) : set of all states reachable from the initial state . 
+			path : seq of atates connected by seq of actions
+			successor function : return a set of (action, successor)for a given state x such that action(x) =  successor(state) actions must be legal
+
+		3. goal test : goal state can be singleton set or a abstract property
+
+		4. path cost function :  choice of cost function reflects the agent;s perf measure 
+			c(x,a,y) -> step cost of taking an action from going state x to state y
+
+	Solution : its a path from initial state to a goal state . optimal solution has the lowest path cost
+
+Formulating problems :
+
+	abstraction : process of reoving details from representation \
+	sometimes, star and action abstraction are also needed
+	it is valid if any abstact solution can expaned to a solution in a more detalied world 
+	usefull when carryong out each of the actions in the solution is easier than the original problem
+
+8 queens problem : two formulations are there indremental (add queens one by one ) compleate sate fromulations ( start with all 8 placed and move them around utnill all statisfies ths conds)
+
+real world problems : 
+	touring problems like Travelling slaes man problem 
+	vlsi  layout 
+	robot navigation 
+	automatic assemby sequencing
+	protien design 
+	internet searching bots
+
+solving a problem after formaulation : curren state (intial state at begging)  -> goal teat -if not goial -> expand curent by using successor function -> get new sates -> choose any one of them based on a search startegy -> goal test -if not -> either go until end or go back -> repeat from top 
+
+components of a node  :
+	 it is a data structure r=ith 5 components
+	 	state corresponding state in the state space 
+	 	parent node : 
+	 	action: action applied to the parent node to get this node 
+	 	path cost  : cost from initial state to this sate 
+	 	depth : noof steps to reach this step 
+
+states                            |    search node
+                                  |   
+configuration of the world        |   book keeping data structure used to rep
+                                  |   search tree
+staes are not on a part. path     |   nodes are on a particular path
+                                  |
+                                  |   two differen nodes can correspond to same
+                                  |   state 
+                                  \
+
+Fringe  :- collection of unexpanded nodess 
+leaf node :=- no successor
+
+
+
+Measuring problem solving performannce :
+	Completeness : is the algo guaranteed to find a sol
+	optimality : 
+	time complexity: 
+	space complexity :
+
+	in ai time ans space complexity is measured in terms of :
+		b, branching factor :  max numb of successors of any node
+		d, the depth of  shallowest goal node 
+		m, maximm length of nay [ath in state space 
+
+	Time comp[lex : in terms of nodes generated
+	Space Complex: interms of nodes stored 
+
+	total cost: search cost (amount of time and memory taken by search) + path cost 
+
+	Uniinformed Search Startegies (blind search) :
+		 only know states from the state spaace 
+		 can diffrentiate non goal states from goal states
+		 can generate succcessors
+		 all US searches have  : problem graph, startegy. fringe , search tree , solution
+		 exponential compplexity search problems cannot be solved by uninformed search problems fro any buiuit small instances 
+
+		 BFS: 
+		 	FIFO (queue)
+		 	optimal if the past cost is non decreasing function of dept 
+		 	memeory is bigger issue , but time complexity is also an issue for biger istances 
+		 uniform cost search :
+		 	expands node with lowest path cost unlike BFS where the shallowest is expanded first.
+
+		 DFS :
+		 	LIFO (stack)
+		 	only need to store the a single path from intial node to goal node along eith the remianing unexpanded bibling nodes for each node on the path 
+		 	incomplete (if tree inumbounded) and unoptimal
+
+		 Depth limited search :
+		 	depth first search is special case whre l  = inf
+		 	in complete if  l < d , unpotimal if l > d
+		 	diameter of state space is a good l 
+
+		 Bidirectional Search :
+		 	tewo silmultaneous search one from forwardx an other from backward, stop when both meet 
+		 	before expanding check if the node is in fringe of other one or not if its then retturn it as the soltuion 
+		 	complete and optimal if both  searches are BFS 
+		 	predcessor func is easy if the successor func is reverisble 
+		 	if one goal state ifs then also easy just like forward search 
+		 	in case of multiple goal states make a dummy sate and all the goal staes a its possible predecessors
+		 	most difficult in case of only implicit solution is provided for the goal state 
+
+
+
+
+informed (hueristic) Search :
+	uses problem specific knowledge beyond the definition of problem
+	evaluation function f(n) :  mesaures distance to the goal
+	heuristic function h(n) : estimated cost of the cheapest path from node n to a goal state 
+	hueristic function imparts additional knowledge of the problem
+	if n is goal node  h(n) = 0
+
+	Greedy best first search :
+		tries to expand the node that is closest to the goal 
+		evaluates nodes just by hueristic function , i.e f(n) = h(n)
+		search cost is min as it does not exapnd any node that is not on the path .
+		not optimal and incomplete (similarly linke DFS ) becuase itcan got to path wil actually connected to goal or on a infinite loop
+		O(b^m)
+		a good hueristic function can rduce the complexity
+
+	A* search  
+		type of best forst search 
+		f(n) = g(n) + h(n) 
+			g(n) : cost to reach the node 
+			h(n) : cost toi reach the goal node from this node
+
+		so , f(n) - esitiamted cost of the cheapest solution through n
+		complete and optimal
+			optimal : if h(n) is admissible hueristic : never estimates the cost to reach a goal 
+			admissible hueristic : optimistic hueerisitcs that think the cost of solving the problem is less tha it actually is 
+			if the hueristic functions is admissible then the n suboptimal path will be expanded firat as it is guaranteed that it's cost will be less than optiaml solution cost 
+			h(n) in case of tree search  : optimal is admissible in case of graph search : consisitent
+
+		if c* is the optimal solution cost 
+			then A* expands only the nodes eoith f(n) < c* 
+			and might expand one eith f(n) = c*
+
+		first  node found is optimal is because the f cost are in non decreasing order so other nodes will be at leat as expensive 
+		since the nodes with higher f cost are not expanded that qhy they can be prunned with out effecting optimality and completenes
+		A* is optimal efficient for any hueristic function that is no other optimal algorithm will expand less  nodes than this. this is because that leaves any nodes with f(n) < c* might miss the optimal solution.
+
+		A*is complete optimal and optimally efficient
+		but still the c omplexity exponential
+		main drwaback : memory , not practical for large scale problems
+
+
+h(n) is consitent (monotonic)if  :
+	h(n) <= stepCost(n') + esitmated cost(n' -> goal) successor(n) = n') for every n'
+	ie     n
+         /   \
+		/     n' triangle inequality 
+       /	  |
+      /       |
+	goal ------
+
+every consistent function in also admissible
+admissible hueristic : optimistic hueerisitcs that think the cost of solving the problem is less tha it actually is 
+
+if h(n) is consistent than values of f(n) along any path are non decreasing 
+
+Memory Bound Huersitic Search :
+	simplest way to reduce the reqs of A* is to add a cut off base on the f value 
+	make the smallest f -cost  of any node that exceeds the cutoff of the previous iteration is the cutoff 
+
+	RBFS : 
+		mimnmics BFS using only linear space
+
+Local Search Algorithm ans optimization problems :
+	
+	if the path to the solution is not required 
+	Local search uses a single cureent state rather than multiple paths 
+	not systematic 
+	adavahtages :
+		uses very lttle memory 
+		ofteh fins reasonable solutions in large or infinite state space 
+		useful for solving optimizations problems 
+		aim is to find either the global minimum cost or global maximum in terms of accuracy of the objective functions
+
+		A complete local search algo always find the goal 
+		optimal one always fins a global minimum.maximum
+
+		satate space land sacpe has 2 attributes location(sates), and elevation (either hueristic cost or objective function)
+
+		Hill climbing search :
+
+			incomplete 
+
+			loop to move in upward direction until peak is reached 
+			node only stores state and its objective function value 
+
+			hill climbing gets stuck : 
+			Local maxima 
+			Ridges palteux 
+
+
+			if alfo is allowed to move side ways in case of shoulder and plauteau then it might get stuck in a infinite loop, it i advicedd to use a limit on side ways movement 
+
+			stocahastic hill climbing : chosses randomly from among the uphill moves 
+
+			First choice hill climbing  :
+				randomlyu generates successors until better thwn current is found
+
+			Random restart Hill climbing :
+
+				loops of hill climbing searches  starting from a random initial state stops when goal is found
+				if each hill climbing has a probability of p of success than 1/p iterations are needed
+
+				if few plaueax and local maxima the random restart can find the solution 
+
+simulated annealing :
+
+	a random walk can be complete but inefficient
+	simulated annealing : hill climbing + random walk yirlds both completess and eficiency 
+	probablity adecreases with temperature 
+
+Local bean Search :
+
+	starts with k randomly selected states genrate sall the successor and then again selcts k best successors 
+	can suffer from lack of diversity 
+	can become concentrated on samll region 
+	stochastic local bean search  :
+	 chosses k random successors given that these successors have better value 
+
+Genetic algorithm :
+	
+	successors are generate dby combining two parent nodes 
+	hust like stochastic local neam searching ,nut its sexual 
+
+	population : set of randomly generated states
+	states are defined over a finite set of alphabets
+	1. intial state 
+	2. fitness Function 
+	3. Selection 
+	4. Crossover 
+	5. Mutation 
+	like stocahstic local beam it is also  
+	combines uphill tendency  eith exchange among parrallel search threads 
+	primary advantage comes from : crossover of indpendent blocks that have evolved on their own 
+
+	Ga work best when schema correspond to a meaningfull compenet of a solution
+	requires carefull enginering of representaions
+
+	constraint satisfaction graph : 
+		nodes variables arcs : constraints
+		advantages :
+			successor function and goal test can be written in ageneric way 
+			effectiveand generic hueweristics can be developed with no additional domain specific expertise 
+			structure of the constraint graph can be used to simplify the solution.
+
+			incremental formulation  and compelete formulation can be used 
+			inital state : empty assignment P{
+			successor function L assign a valuie to a variable that does not conflicts eith pther 
+			goal test  if the currrent assignment is complete 
+			path cost : constant cost 
+			soltuion depth : n 
+			aolution path is irrelevant 
+			DFS is preffered
+			
+
+

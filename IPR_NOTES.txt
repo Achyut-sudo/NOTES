@@ -1,0 +1,157 @@
+Mod 2 :
+Intellectual property/ Industrial Property:
+	the result of thought , tlllectual activity
+	rationalle fot protection of intellectual Property 
+		to protect the invetors  interesrt and ensure teir further involvement ifcreativity
+		to balance the inersets of the owner and the benefitts of the IP to the soiety by not letting the onwer have a monopoly of the IP
+	
+Types of Intellectual Properties:
+	
+	Trademarks :
+	      under trademrks Act 1999 a trademark shouldbe capable of being represented graphically ans should be capable of distinguishing products or service of one person to that of other. 
+		it is a word, name, symbol, slogans or device used to indicate the source , quality and ownership of a product or service.
+		indentifies and distinguishes the products or services of one person from those of another
+		provide guarantee of quality ans consistency of the product they indentify
+	
+	Copyrights :
+		it is a form of protection granted to the authors of the origianl works
+		the onwer of the copyright has the right to reproduce the work,prepare derivative works based on the origfinal work, distribute the work and perform and display the work.
+		Some violations of copyt right comes under fair use of the original work, sucha s use of insignificant portion of a work for non commercial purposes or parody of a copyrighted work
+	
+	Patents :
+		it is a type of grant that permits its owner to prevent others from making using  importing or selling an invention .
+		there are 3 types of patents :
+			utility : covers usefull inventions discoveries 
+			design : covers new , original and ornamental design for articles 
+			plant : covers new and distinct asexually reproduced plant varirties 
+		available for useful, novelm nonobvious inventions
+		prohibits patenting of mere addition or modification of something already known
+		pure scientific principles are not covered.
+
+	plant varieties :
+		Palnt Varieties ans Farmer's Right act 2001
+		a new variety is registerable only if it conforms to the criteria of :
+			novelty
+			distinctiveness
+			uniform and stabilty
+		for extant vriety:  novelty is not applicable
+		
+	Geographical Indications :
+		indicates the origin of prodcts and also indentifies them with atrributes of a specific country, region or locality 
+		the qualities or reputationare theere may be due to :
+			natural factors : raw materials,soil,climate, 
+			method of manufacture or preparation such as traditional methods
+			concentration of same type of buisness
+		cob=nnections of products to the region and vice versa 
+
+	Lay out design : (semiconductor design) 
+		lay out design of semiconductor integrated design are protected 
+			it is original
+			it is inhenrently distinctive
+			it is inherently capabble of being diistinguishable from any other lay out
+			it is has not been exploited anywhere inindia or in a convention country
+
+World Intellectual Property Organization (WIPO 1970) :
+	agency of UN to promote intellectual property throughout the world and to administer 24 treaties dealings with IP, including :
+		Paris Convention
+		Madrid Protocol
+		Trademark treaty Law
+		Patent Cooperation Treaty 
+		Berne Convention
+
+World Trade Organization 1995 :
+	deals with rules of trade among its  more than 150 member nations. 
+	resolves trade disputes ans administers various agrements, including those relating to IP
+	
+
+Berne Convention (1886) :
+	Beren convention for the protection of Literrary and Artistic Works
+	under leadership of victor hugot o protect literray and artistic works
+	more than 160 member nations
+	administered by WIPO
+	3 principles :
+		principle of national treatment : based on the idea that member nations treat nationals of other nations as their own for purposes of copyright.
+		principle of automatic protection: protection must not be conditional upon compliance with any formality 
+		principle of indepnedence of protection : protection is independent of the exisitence of protection in the country of origin.
+	free uses :
+		reproduction in special Cases
+		for teaching purposes
+		reproduction off similar articles andd use of works for the purpose of reporing cureent events
+		recordings for broadcasting
+
+Paris Conventions for the protection of industrial Property  (1883 ): 
+	trademark and patent protection
+	same legal protection for trademarks and patents in all memebr countries
+	administered by WIPO
+	3 provisions:
+		national treatment :the protection of industrial property, each Contracting State must grant the same protection to nationals of other Contracting States that it grants to its own nationals
+					 nationals of non meber states can also excercise theat feat if they  a real and effective industrial aor commercial establishmnet in a contracting State.
+		right of priority : with application of patent and iindustrial design a applicant can pplyt of them within 12 or 6 moths respectively in any other country and they would be act as applied from the day of the oriinal country.
+		common rules :
+			Patents : : the granting of a patent in one Contracting State does not oblige other Contracting States to grant a patent and aslo aptent can not be denied on the grounds that it has been denied in other countires
+			Marks : the registration of marks obtained in one contracting state in independant of its possible registration in any other counrty.and annulment of the registration oiof amrk in one Contractinf state will not effect the vvlaidity of the registrstion in other states.
+			industrial design : industrila design must be protected in each contracting state and cannot be cancelled on the grounda that the idesign has not been formulated in the country.
+			Trade Name  : protection is granted in contracting states without  there being an obligation to file or register the names.
+			indications of source :  prtection must be provided against direct or indirect use of a false indication of the source of goods or thethe identity of their producer manufacturer or trader
+			unfair competetion :
+
+
+Trade Related Aspects of Intellectual Property Rights (1995) :
+	establishes minimum standard for the vailability, scope and uise of
+		TM
+		CR
+		GI
+		Patents
+		Ind. Des.
+		Layout od IC
+		trade secrets
+	lays down permissble exceptions for balancing the interest of IP with th interstrs of public health and economic development
+	resolves trade issues
+	frames IP system in terms of innovation technology transfer and public welfare
+	Brene and Paris plus Agreement.
+
+
+Mod2 :
+
+History of copyright :
+	1436 :
+		printing press was Johannes Gutenberg in Germany
+		neccesity of  protecting printers and book selllers was recognised
+		certain privileges were awarded to printers and publishers and authors in japan
+	1483 :
+		king Richard 3 allowed foreigners to import manuscripts asnd books  into england and print tem.
+		much of the book trade came in the hands of rforegners 
+		england became the hub of printing press
+	Stationer : In england, printers who weree at the same time as well as the booksellers
+	1523 - 1528 
+		in 1529 system of privilleges were created, henry 8 made the sattionery guild into company compriising of 97  publishers
+		Henry 8  banned import of books in 1533 on the grounds that enough bookk printers and binders were there in England.
+		
+	1556 
+		a royal charter given to stationer company to administer private publishing  and alos deal with infringments by seizure and destruction of illegal copies
+	
+	1662 :
+		the LicensING aCT PROHIBITED ANY priting of book which was not licensed and regitered with the Stationer's Company.
+
+	1679 :
+		the licensing act was replealed
+	1709 :
+		wordss' first copyright : Act of Queen Anne
+		laid down three basic ruel L
+			authors of boom not yet printed were to have the sole rigjt of printing for 14 years from the date of publication
+			infringers would have to pay fine of a penny for every sheeer. half weent to the croqn haklkf to the paintiff 
+			no suit could be brought unless tje title of the boom had been enterd before publication in the register Bool pf the company of stationers
+	1911 :
+		Copyright act was adoted
+		common law of copyright was alo abolished
+		this act should not abrogate any right or jurisdiction to restrain a breach of trust or conffidence	
+	IN INDIA :
+		INDIAN COPYRIGHT ACT OF 184R7 WHICH WAS PASSED BY GOVERNOR GENERAL OF INDIA WHICH AFFIRMEED TJE ENGLISH COPYRIGHT IN INDIA
+		copyright ACt of 1911, whil repleaing all other law on the siubjkjkect matter was made pplicable in all colonies in india
+		in 1914 :
+			the indian Copyright act : modified the copyright act of 1911 and provisioning it to make apllicable to india'
+		copyright act of 1957 replacev the one of 1914
+
+
+
+
